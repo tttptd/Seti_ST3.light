@@ -11,8 +11,8 @@
         "content_margin": [0,0,0,0],
         "tab_overlap": 1,
         "tab_width": 190,
-        "tab_min_width": 50,
-        "tab_height": 45,
+        "tab_min_width": 100,
+        "tab_height": 35,
         "mouse_wheel_switch": false
     },
 
@@ -99,7 +99,7 @@
         "class": "tab_close_button",
         "parents": [{"class": "tab_control","attributes": ["hover"]}],
         "layer0.opacity": 1,
-        "layer0.tint": [255,255,255]
+        "layer0.tint": [0,0,0]
 
     },
     {
@@ -182,17 +182,17 @@
     {
         "class": "tab_label",
         "fade": true,
-        "fg": [170,170,170]
+        "fg": [100,100,100]
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control","attributes": ["hover"]}],
-        "fg": [226,226,226]
+        "fg": [0,0,0]
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control","attributes": ["selected"]}],
-        "fg": [223,225,232]
+        "fg": [11,83,160,255]
     },
 	{
 		"class": "tab_label",
@@ -221,13 +221,13 @@
     {
         "class": "show_tabs_dropdown_button",
         "content_margin": [10, 8],
-		"layer0.texture": "User/Seti_ST3_light/Main/tabset-list-hover@2x.png",
+        "layer0.texture": "User/Seti_ST3_light/Main/tabset-list@2x.png",
         "layer0.opacity": 1
     },
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-		"layer0.texture": "User/Seti_ST3_light/Main/tabset-list@2x.png",
+        "layer0.texture": "User/Seti_ST3_light/Main/tabset-list-hover@2x.png",
         "layer0.opacity": 1
     },
     // Tab scroll left
@@ -290,7 +290,8 @@
     // Standard vertical scroll bar
     {
         "class": "scroll_bar_control",
-        "layer0.tint": [11,16,21],
+        // "layer0.tint": [11,16,21],
+        "layer0.tint": [200, 200, 200],
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
         "blur": true
@@ -299,7 +300,8 @@
     {
         "class": "scroll_bar_control",
         "attributes": ["horizontal"],
-        "layer0.tint": [11,16,21],
+        // "layer0.tint": [11,16,21],
+        "layer0.tint": [200, 200, 200],
         "layer0.inner_margin": 0,
         "blur": true
     },
@@ -507,7 +509,8 @@
     // General labels
     {
         "class": "label_control",
-        "color": [249, 255, 255]
+        // "color": [249, 255, 255]
+        "color": [190, 190, 190]
     },
     // Text field labels
     {
@@ -545,7 +548,8 @@
     // Status bar container
     {
         "class": "status_bar",
-        "layer0.tint": [16,17,18],
+        // "layer0.tint": [16,17,18],
+        "layer0.tint": [50, 50, 50],
         "layer0.opacity": 1,
         "content_margin": [15, 7]
     },
@@ -570,7 +574,7 @@
         "class": "sidebar_container",
         "layer0.opacity": 1,
         // "layer0.tint": [16,17,18],
-        "layer0.tint": [255,255,255],
+        "layer0.tint": [246,246,246],
         "content_margin": [0, 0, 1, 0]
     },
     // Sidebar tree || entries
@@ -661,7 +665,7 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
         // "color": [255,255,255]
-        "color": [200,0,0]
+        "color": [2,150,230]
     },
     // Sidebar folder
     {
@@ -675,7 +679,7 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],
         // "color": [124,159,174]
-        "color": [100,0,0]
+        "color": [2,150,230]
     },
     {
         "class": "sidebar_label",
@@ -782,7 +786,7 @@
     // Sidebar folder closed
     {
         "class": "icon_folder",
-        "layer0.texture": "User/Seti_ST3_light/Main/folder@2x.png",
+        // "layer0.texture": "User/Seti_ST3_light/Main/folder@2x.png",
         "layer0.opacity": 0.6,
         "layer0.inner_margin": 0,
         "content_margin": [7,7],
@@ -792,8 +796,8 @@
     {
         "class": "icon_folder",
         "settings": ["Seti_ClosedFolder_same"],
-        "layer0.texture": "User/Seti_ST3_light/Main/folder_open@2x.png",
-        "layer0.opacity": 0.5,
+        // "layer0.texture": "User/Seti_ST3_light/Main/folder_open@2x.png",
+        "layer0.opacity": 0.6,
     },
     {
         "class": "icon_folder",
@@ -809,7 +813,7 @@
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["expanded"]}],
-        "layer0.texture": "User/Seti_ST3_light/Main/folder_open@2x.png",
+        // "layer0.texture": "User/Seti_ST3_light/Main/folder_open@2x.png",
         "layer0.inner_margin": 0,
         "layer0.opacity": 0.6,
         "content_margin": [7,7],
@@ -870,9 +874,11 @@
     // Text input field item
     {
         "class": "text_line_control",
-        "layer0.tint": [21,23,24], // is the same color of BG in widget file
+        // "layer0.tint": [21,23,24], // is the same color of BG in widget file
+        "layer0.tint": [20,20,20], // is the same color of BG in widget file
         "layer0.opacity": 1,
-        "content_margin": [3,1,5,0] // control the search panel height , line padding also effects this
+        // "content_margin": [3,1,5,0] // control the search panel height , line padding also effects this
+        "content_margin": [1,1,1,1] // control the search panel height , line padding also effects this
     },
     // options @ BOTTOM PANEL BUTTONS
     // Text input dropdown
@@ -896,13 +902,15 @@
     {
         "class": "panel_control",
         "layer0.opacity": 1,
-        "layer0.tint": [16,17,18],
+        // "layer0.tint": [16,17,18],
+        "layer0.tint": [80,80,80],
         "content_margin": 0
     },
     // Quick panel background
     {
         "class": "overlay_control",
-        "layer1.tint": [36,50,64],
+        // "layer1.tint": [36,50,64],
+        "layer1.tint": [80,80,80],
         "layer1.opacity": 1,
         "layer0.opacity": 0,
         "content_margin": 0
@@ -1143,7 +1151,8 @@
     {
         "class": "icon_regex",
         "layer0.texture": "User/Seti_ST3_light/Main/regex@2x.png",
-        "layer0.tint": [96,125,139],
+        // "layer0.tint": [96,125,139],
+        "layer0.tint": [150,150,150],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1156,12 +1165,18 @@
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
         "layer0.tint": [148,211,209]
+    },
+    {
+        "class": "icon_regex",
+        "parents": [{"class": "icon_button_control","attributes": ["hover","selected"]}],
+        "layer0.tint": [255,51,102]
     },
     // Case sensitive search button
     {
         "class": "icon_case",
         "layer0.texture": "User/Seti_ST3_light/Main/casesens@2x.png",
-        "layer0.tint": [96,125,139],
+        // "layer0.tint": [96,125,139],
+        "layer0.tint": [150,150,150],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1174,12 +1189,18 @@
         "class": "icon_case",
         "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
         "layer0.tint": [148,211,209]
+    },
+    {
+        "class": "icon_case",
+        "parents": [{"class": "icon_button_control","attributes": ["hover","selected"]}],
+        "layer0.tint": [255,51,102]
     },
     // Match whole word search button
     {
         "class": "icon_whole_word",
         "layer0.texture": "User/Seti_ST3_light/Main/wholeword@2x.png",
-        "layer0.tint": [96,125,139],
+        // "layer0.tint": [96,125,139],
+        "layer0.tint": [150,150,150],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1192,6 +1213,11 @@
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
         "layer0.tint": [148,211,209]
+    },
+    {
+        "class": "icon_whole_word",
+        "parents": [{"class": "icon_button_control","attributes": ["hover","selected"]}],
+        "layer0.tint": [255,51,102]
     },
 
 //========================================================
@@ -1202,7 +1228,8 @@
     {
         "class": "icon_context",
         "layer0.texture": "User/Seti_ST3_light/Main/context@2x.png",
-        "layer0.tint": [96,125,139],
+        // "layer0.tint": [96,125,139],
+        "layer0.tint": [150,150,150],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1215,12 +1242,18 @@
         "class": "icon_context",
         "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
         "layer0.tint": [148,211,209]
+    },
+    {
+        "class": "icon_context",
+        "parents": [{"class": "icon_button_control","attributes": ["hover","selected"]}],
+        "layer0.tint": [255,51,102]
     },
     // Use search buffer
     {
         "class": "icon_use_buffer",
         "layer0.texture": "User/Seti_ST3_light/Main/buffer@2x.png",
-        "layer0.tint": [96,125,139],
+        // "layer0.tint": [96,125,139],
+        "layer0.tint": [150,150,150],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1233,6 +1266,11 @@
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
         "layer0.tint": [148,211,209]
+    },
+    {
+        "class": "icon_use_buffer",
+        "parents": [{"class": "icon_button_control","attributes": ["hover","selected"]}],
+        "layer0.tint": [255,51,102]
     },
 
 //========================================================
