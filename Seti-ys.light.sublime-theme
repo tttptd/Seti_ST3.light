@@ -264,14 +264,14 @@
     {
         "class": "fold_button_control",
         "layer0.texture": "User/Seti_ST3-YS/Main/fold-closed@2x.png",
-        "layer0.opacity": 0.45,
+        "layer0.opacity": 0.6,
         "layer0.inner_margin": 0,
         "content_margin": 8
     },
     {
         "class": "fold_button_control",
         "attributes": ["hover"],
-        "layer0.opacity": 0.85
+        "layer0.opacity": 1
     },
     {
         "class": "fold_button_control",
@@ -436,7 +436,7 @@
 
     {
         "class": "sheet_container_control",
-        "layer0.tint": [21,23,24],
+        "layer0.tint": [255, 255, 255],
         "layer0.opacity": 1
 	},
 
@@ -569,7 +569,8 @@
     {
         "class": "sidebar_container",
         "layer0.opacity": 1,
-        "layer0.tint": [16,17,18],
+        // "layer0.tint": [16,17,18],
+        "layer0.tint": [255,255,255],
         "content_margin": [0, 0, 1, 0]
     },
     // Sidebar tree || entries
@@ -623,7 +624,8 @@
     {
         "class": "tree_row",
         "layer0.texture": null,
-        "layer0.tint": [150, 150, 150, 100],
+        // "layer0.tint": [150, 150, 150, 100],
+        "layer0.tint": [15,101,194,255],
         "layer0.opacity": 0
     },
     // Sidebar row selected
@@ -650,25 +652,30 @@
     // Sidebar files
     {
         "class": "sidebar_label",
-        "color": [200,200,200],
-        "font.size": 11
+        // "color": [200,200,200],
+        "color": [100,100,100],
+        // "font.size": 11
+        "font.size": 12
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "color": [255,255,255]
+        // "color": [255,255,255]
+        "color": [200,0,0]
     },
     // Sidebar folder
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable"]}],
-        "color": [124,159,174],
+        // "color": [124,159,174],
+        "color": [100,100,100],
         "font.bold": false
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],
-        "color": [124,159,174]
+        // "color": [124,159,174]
+        "color": [100,0,0]
     },
     {
         "class": "sidebar_label",
