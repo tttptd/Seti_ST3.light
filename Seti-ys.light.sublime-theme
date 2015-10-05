@@ -291,7 +291,7 @@
     {
         "class": "scroll_bar_control",
         // "layer0.tint": [11,16,21],
-        "layer0.tint": [200, 200, 200],
+        "layer0.tint": [246, 246, 246],
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
         "blur": true
@@ -301,7 +301,7 @@
         "class": "scroll_bar_control",
         "attributes": ["horizontal"],
         // "layer0.tint": [11,16,21],
-        "layer0.tint": [200, 200, 200],
+        "layer0.tint": [246, 246, 246],
         "layer0.inner_margin": 0,
         "blur": true
     },
@@ -315,17 +315,17 @@
     // Standard vertical scroll puck
     {
         "class": "puck_control",
-        "layer0.tint":[22,31,39], // auto complete SB
+        "layer0.tint":[100,100,100], // auto complete SB
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
-        "content_margin": [3,0],
+        "content_margin": [4,0],
         "blur": false
     },
     // Standard horizontal scroll puck
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.tint":[22,31,39],
+        "layer0.tint":[100,100,100],
         "layer0.inner_margin": 0,
         "content_margin": [12,3],
         "blur": false
@@ -467,12 +467,12 @@
 
     {
         "class": "minimap_control",
-        "viewport_color": [13,14,15,180]
+        "viewport_color": [13,14,15,80]
     },
     {
         "class": "minimap_control",
         "attributes": ["hover"],
-        "viewport_color": [13,14,15,220]
+        "viewport_color": [13,14,15,30]
     },
 
 
@@ -549,9 +549,9 @@
     {
         "class": "status_bar",
         // "layer0.tint": [16,17,18],
-        "layer0.tint": [50, 50, 50],
+        "layer0.tint": [207, 205, 207],
         "layer0.opacity": 1,
-        "content_margin": [15, 7]
+        "content_margin": [10, 5]
     },
     // Status bar button
     {
@@ -562,7 +562,7 @@
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "color": [170,170,170]
+        "color": [100,100,100]
     },
 
 //========================================================
@@ -629,7 +629,7 @@
         "class": "tree_row",
         "layer0.texture": null,
         // "layer0.tint": [150, 150, 150, 100],
-        "layer0.tint": [15,101,194,180],
+        "layer0.tint": [15,101,194,150],
         "layer0.opacity": 0
     },
     // Sidebar row selected
@@ -657,7 +657,7 @@
     {
         "class": "sidebar_label",
         // "color": [200,200,200],
-        "color": [100,100,100],
+        "color": [80,80,80],
         // "font.size": 11
         "font.size": 12
     },
@@ -672,7 +672,7 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable"]}],
         // "color": [124,159,174],
-        "color": [100,100,100],
+        "color": [150,150,150],
         "font.bold": false
     },
     {
@@ -850,7 +850,8 @@
     {
         "class": "button_control",
         "layer0.opacity": 1,
-        "layer0.tint": [69,90,100],
+        // "layer0.tint": [69,90,100],
+        "layer0.tint": [230,230,230],
         "min_size": [75,0],
         "content_margin": [5,6] // the search panel right side buttons height
     },
@@ -858,7 +859,7 @@
     {
         "class": "button_control",
         "attributes": ["hover"],
-        "layer0.tint": [96,125,139]
+        "layer0.tint": [255,255,255]
     },
     // Pressed button state
     {
@@ -996,7 +997,8 @@
     {
         "class": "popup_control",
         "content_margin": 0,
-        "layer0.tint": [16,17,18],
+        // "layer0.tint": [16,17,18],
+        "layer0.tint": [200,200,200],
         "layer0.opacity": 1
     },
     {
